@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Dark Ejecutivo</title>
+  <style>
+    :root{--bg:#0f1115;--surface:#171a21;--line:#282d37;--text:#e5e7eb;--muted:#9ca3af;--accent:#8ea2ff}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+    .layout{display:grid;grid-template-columns:250px 1fr;min-height:100vh}
+    .side{border-right:1px solid var(--line);padding:22px;background:#12151b}
+    .brand{font-size:18px;font-weight:600;margin-bottom:18px}.nav a{display:block;color:#c5cad3;text-decoration:none;padding:10px 12px;border-radius:8px;margin-bottom:6px}
+    .nav a.active,.nav a:hover{background:#1d2330;color:#f3f4f6}
+    .main{padding:26px}.title{font-size:32px;margin:0 0 18px}
+    .k{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:16px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}.small{font-size:12px;color:var(--muted)}.big{font-size:28px;font-weight:600;margin-top:6px}
+    table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+    th,td{padding:13px;border-bottom:1px solid var(--line);font-size:14px;text-align:left}th{background:#141822}
+    .ok{color:#a7f3d0}.warn{color:#fde68a}.bad{color:#fecaca}
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="side"><div class="brand">Impulso · Premium Dark</div><nav class="nav"><a class="active" href="#">Control</a><a href="#">Clientes</a><a href="#">Facturación</a><a href="#">Riesgos</a></nav></aside>
+    <main class="main">
+      <h1 class="title">Control ejecutivo</h1>
+      <div class="k"><div class="card"><div class="small">SLA global</div><div class="big">99.7%</div></div><div class="card"><div class="small">Incidentes L1-L2</div><div class="big">12</div></div><div class="card"><div class="small">Renovaciones 30 días</div><div class="big">8</div></div></div>
+      <table><thead><tr><th>Servicio</th><th>Cliente</th><th>Impacto</th><th>Estado</th><th>Owner</th></tr></thead><tbody>
+        <tr><td>Firewall HA</td><td>Alfa Legal</td><td class="warn">Medio</td><td class="ok">Operativo</td><td>Jorge</td></tr>
+        <tr><td>Backup Veeam</td><td>Taller Hispania</td><td class="bad">Alto</td><td class="warn">En revisión</td><td>Pepe</td></tr>
+        <tr><td>Tenant M365</td><td>BioFarma Iberia</td><td class="warn">Medio</td><td class="ok">Operativo</td><td>Trinity</td></tr>
+      </tbody></table>
+    </main>
+  </div>
+</body></html>
